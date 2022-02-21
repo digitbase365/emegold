@@ -993,14 +993,15 @@ form .subm-btn:hover{
 }
 .main_menu .navbar-brand img {  
   padding-top: 10px;
-  max-width: 180px;
-  height: 60px; 
+  max-width: 200px;
+  height: 70px; 
 }
 @media (max-width: 991px) {
   /* line 6, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_menu.scss */
   .main_menu .navbar-brand img {
-    max-width: 120px;  
-    padding-top: 5px;
+    max-width: 130px;  
+    padding: 5px 0;
+    height: unset;
 }
 }
 
@@ -1148,6 +1149,7 @@ nav.navbar{
 
   /* Mobile Logo Ruleset */
 
+
   /* End of Mobile Logo Ruleset */
 }
 
@@ -1206,6 +1208,7 @@ nav.navbar{
     color: #032544;
     position: relative;
     z-index: 3;
+    margin: 50px 0;
   } 
   .banner_part::before{
     position: absolute;
