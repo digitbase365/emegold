@@ -2262,6 +2262,7 @@ section.about_part.adjust{
   position: relative;
   max-width: 100%;
   margin: 50px 0 100px;
+  display: none;
 } 
 
 .casing{
