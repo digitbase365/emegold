@@ -2479,25 +2479,42 @@ section.about_part.adjust{
 
 /**************** END OF PROJECT GALLERY DECLARATIONS ****************/
 
-/****************  FOUNDER DECLARATIONS ****************/
+/****************  FOUNDER DECLARATIONS ****************/  
 .founder .founder{ 
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column-reverse;
-  text-align: center;
-  margin: 0 auto;
-  padding: 65px 20px;
+  width: 100%;
+  max-width: 750px; 
+  height: 100%; 
+  display: flex; 
+  align-items: center;
+  text-align: center; 
+  justify-content: center;
+  gap: 1em;
+  margin: 0 auto 5em;
+  padding-bottom: 65px;   
+}
+.founder .founder .section-title{ 
+  font-size: clamp(1.26rem, 2.5vw, 3rem);
 
 }
 .founder .col-left{
   width: 250px;
-  height: 300px;
-  margin: 0 auto; 
+  height: 280px; 
+  display: flex;
+  flex-direction: column;  
 }
-.founder .col-right{
-  width: 85%;
-  max-width: 650px;
-  margin: 0 auto;
+.founder .col-left h3{
+  margin-top: 2em;
+  font-size: clamp(.76em, 1.15vw, 1.65rem);
+}
+.founder .col-left h3 span{
+  margin-top: 1.2em;
+  font-size: clamp(.86em, 1.35vw, 1.45rem);
+  color:var(--accent-color); 
+}
+.founder .col-right{ 
+  flex-basis: 50%;
+  max-width: 360px;
+  margin: 0 auto;   
 }
 .founder .col-right p{
   margin-bottom: 50px;
