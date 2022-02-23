@@ -999,7 +999,7 @@ form .subm-btn:hover{
 .main_menu .navbar-brand img {  
   padding-top: 10px;
   max-width: 200px;
-  height: 70px; 
+  height: 65px; 
 }
 @media (max-width: 991px) {
   /* line 6, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_menu.scss */
@@ -2504,7 +2504,7 @@ section.about_part.adjust{
 }
 .founder .col-left h3{
   margin-top: 2em;
-  font-size: clamp(.76em, 1.15vw, 1.65rem);
+  font-size: clamp(.96em, 1.15vw, 1.65rem);
 }
 .founder .col-left h3 span{
   margin-top: 1.2em;
@@ -2538,6 +2538,16 @@ section.about_part.adjust{
   width: 98%;
   border: 6px solid crimson;
   z-index: -1;
+}
+
+/* Founder Media Queries */
+@media screen and (max-width: 991px){
+  .founder .founder{   
+    flex-direction: column-reverse;
+    gap: 1em;
+    margin: 0 auto 5em;
+    padding: 45px 25px;   
+  }
 }
 /****************  END OF FOUNDER DECLARATIONS ****************/
 
