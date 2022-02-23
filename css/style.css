@@ -42,9 +42,14 @@ p{
   font-weight: 300;
 }
 section .container h2.section-title{
-  font-size: clamp(1.56rem, 4vw, 3.75rem);
+  font-size: clamp(1.56rem, 3vw, 3.75rem);
   font-weight: clamp(200, 500, 800);
-  /* text-transform: initial; */
+  line-height: 1.25;
+}
+section .container-fluid h2.section-title{
+  font-size: clamp(1.56rem, 3vw, 3.75rem);
+  font-weight: clamp(200, 500, 800);
+  line-height: 1.25;
 }
 /* TypeWriter Effect Declaration */
 .eme-wrapper{ 
@@ -504,7 +509,7 @@ ul {
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   border: 1px solid transparent;
   border-radius: 35px;
 }
@@ -2048,12 +2053,18 @@ section.about_part.adjust{
 /* line 41, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_review.scss */
 .review_part .tour_pack_content h4 {
   margin-top: 40px;
+  font-size: clamp(.75rem, 2vw, 1.25rem);
+}
+.review_part .tour_pack_content h4 span{
+  color: var(--golde-color);
+  font-size: clamp(.65rem, 1.6vw, 1.05rem);
+  font-weight: 400;
 }
 
 /* line 45, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_review.scss */
 .review_part .tour_pack_text {
   width: 81%;
-  padding-left: 10%;
+  padding-left: 10%; 
 }
 
 @media (max-width: 991px) {
@@ -2065,11 +2076,12 @@ section.about_part.adjust{
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1550px) {
   /* line 45, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_review.scss */
   .review_part .tour_pack_text {
     width: 100%;
-    padding-left: 0;
+    padding-left: 0; 
+    margin-top: -50%;
   }
 }
 
@@ -2317,7 +2329,7 @@ section.about_part.adjust{
   grid-area: sixteen;
 }
 
-.card:hover .card__content{
+.card:hovr .card__content{
    transform: rotateY(.5turn);
 }
 .card__content{
@@ -2377,14 +2389,14 @@ section.about_part.adjust{
   background: url(../img/progallery/010.jpeg) no-repeat top center / cover;
 }
 .eleven .card__front{
-  background: url(../img/progallery/006.jpeg) no-repeat bottom center / cover;
+  background: url(../img/progallery/cpdrill.jpg) no-repeat bottom 30% center / cover;
 }
 .twelve.card .card__front{
-  background: url(../img/progallery/012.jpg) no-repeat bottom center / cover;
+  background: url(../img/progallery/resis.jpg) no-repeat bottom 30% center / cover;
 }
 .thirteen .card__front{
   background: url(../img/progallery/013.jpeg) no-repeat bottom 15% center / cover;
-}
+} 
 .fourteen .card__front{
   background: url(../img/progallery/014.jpeg) no-repeat bottom center / cover;
 }
@@ -2412,10 +2424,13 @@ section.about_part.adjust{
   background: #333;
 }
 .card__title{
-  font-size: 3rem;
+  font-size: clamp(.95em, 1.25vw, 2em);
   transform: translateZ(5rem);
-  /* position: absolute; */
-  z-index: 5;
+  position: relative;
+  z-index: 15;
+  color: #fff;
+  font-weight: 400;
+  /* -webkit-text-stroke: 1px black */
 }
 .card__subtitle{
   transform: translateZ(2rem);
@@ -2476,11 +2491,12 @@ section.about_part.adjust{
 .founder .col-left{
   width: 250px;
   height: 300px;
-  margin: 0 auto;
-  /* border: 1px solid dodgerblue; */
+  margin: 0 auto; 
 }
 .founder .col-right{
-  width: 100%;
+  width: 85%;
+  max-width: 650px;
+  margin: 0 auto;
 }
 .founder .col-right p{
   margin-bottom: 50px;
