@@ -1151,6 +1151,14 @@ nav.navbar{
   .dropdown .dropdown-item:hover {
     color: #ff5e13 !important;
   }
+/* ACTIVE MOBILE RULESET */
+  /* header ul.navbar-nav.activ{  
+    left: -100%;
+  } */
+  header ul.navbar-nav{
+    display: none;
+  }  
+
 
   /* Mobile Logo Ruleset */
 
@@ -1210,7 +1218,9 @@ nav.navbar{
 
   }
   .banner_part .banner_text .banner_text_iner p{
-    color: #032544;
+    background-color: #000;
+    opacity: .69;
+    color: #fff;
     position: relative;
     z-index: 3;
     margin: 50px 0;
