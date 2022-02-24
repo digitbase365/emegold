@@ -2413,7 +2413,7 @@ section.about_part.adjust{
   background: url(../img/progallery/013.jpeg) no-repeat bottom 15% center / cover;
 } 
 .fourteen .card__front{
-  background: url(../img/progallery/014.jpeg) no-repeat bottom center / cover;
+  background: url(../img/progallery/014.jpeg) no-repeat top 25% center / cover;
 }
 .fifteen .card__front{
   background: url(../img/progallery/015.jpeg) no-repeat top center / cover;
