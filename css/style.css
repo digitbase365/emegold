@@ -1151,13 +1151,7 @@ nav.navbar{
   .dropdown .dropdown-item:hover {
     color: #ff5e13 !important;
   }
-/* ACTIVE MOBILE RULESET */
-  /* header ul.navbar-nav.activ{  
-    left: -100%;
-  } */
-  header ul.navbar-nav{
-    display: none;
-  }  
+
 
 
   /* Mobile Logo Ruleset */
@@ -2389,7 +2383,7 @@ section.about_part.adjust{
   background: url(../img/progallery/005.jpeg) no-repeat top center / cover;
 }
 .six.card .card__front{
-  background: url(../img/progallery/006.jpeg) no-repeat bottom center / cover;
+  background: url(../img/progallery/insulation.jpg) no-repeat bottom center / cover;
 }
 .seven .card__front{
   background: url(../img/progallery/007.jpg) no-repeat center center / cover;
