@@ -10,6 +10,7 @@
   --accent-color:#FDB833; 
   --prime-color: #0B4F6C;
   --golde-color: #FFCA18;
+  --gold-color: #f7c51e;
   /* --accent-color: #E59500; */
 
   --level-one: translateZ(3rem);
@@ -1534,6 +1535,9 @@ section.about_part.adjust{
     background-image: none;
     padding: 70px 0 0;
   }
+  .about_part .about-wrap{ 
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2259,6 +2263,9 @@ section.about_part.adjust{
   margin: 2em 0 1em; 
   font-size: 3rem;
   font-weight: 500;
+}
+.projects .top h5{
+  text-align: center;
 }
 .projects p{
   max-width: 750px;
