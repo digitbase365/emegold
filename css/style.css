@@ -661,46 +661,29 @@ ul {
   align-items: center;
 }
 .contact-container .form{
-  width: 100%;
-  max-width: 820px; 
+  width: 75%; 
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, .1);
   z-index: 1000;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2.5fr;
+  margin-left: 10%;
 }
 .contact-container .contact-form{ 
   background-color: var(--prime-color); 
+  background-color: #d1e6d9; 
   position: relative;
 } 
-.contact-container .circle{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; 
-  background: linear-gradient(135deg, transparent 20%, #003249); 
-  position: absolute;
-}
-.circle.one{
-  width: 130px;
-  height: 130px;
-  top: 130px;
-  right: -40px;
-  border-radius: 50%;
-}
-.circle.two{
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  right: 30px; 
-}
+
 .contact-container .contact-form::before{
   content: "";
   position: absolute;
   width: 26px;
   height: 26px; 
   background-color: var(--prime-color);
+  background-color: #d1e6d9;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -882,7 +865,7 @@ form .subm-btn:hover{
   height: 100px; 
   border: 22px solid #FDCA40;
   border-radius: 50%;
-  bottom: -77px;
+  bottom: -67px;
   right: 50px;
   opacity: .3;
 }
@@ -893,7 +876,7 @@ form .subm-btn:hover{
   height: 500px;
   border-radius: 50%;
   background: linear-gradient(to bottom, #F2DDA4, #FDB833);
-  bottom: 50%;
+  bottom: 60%;
   right: 50%;
   transform: translate(-40%, 38%);
 }
@@ -919,6 +902,8 @@ form .subm-btn:hover{
 @media screen and (max-width: 850px){
   .contact-container .form{
     grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0;
   }
   .contact-container .contact-info::before{
     bottom: initial;
@@ -949,6 +934,10 @@ form .subm-btn:hover{
 }
 
 @media screen and (max-width: 480px){
+
+  .contact-container{ 
+    padding: 0; 
+  }
   .contact-container .contact-info::before{
     display: none;
   }
@@ -960,6 +949,7 @@ form .subm-btn:hover{
   .contact-container form,
   .contact-container .contact-info{
     padding: 1.7em 1.6em;
+    width: 100%; 
   }
 
   .contact-container .text,
@@ -2689,8 +2679,11 @@ section.about_part.adjust{
   /* line 82, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_footer.scss */
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   /* line 82, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_footer.scss */
+ .footer-area{
+   padding-top: 100px !important;
+ }
 }
 
 /* line 110, /Applications/MAMP/htdocs/palash/cl/july 2019/190 Emegold Construction/190 Emegold Construction html/sass/_footer.scss */
